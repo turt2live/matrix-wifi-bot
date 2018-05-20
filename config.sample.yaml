@@ -1,0 +1,24 @@
+# The homeserver configuration for the bot. This is where the bot will connect to.
+homeserver:
+  # The URL to the client/server API. This is usually the same as specified in Riot/your client
+  url: "https://t2bot.io"
+
+  # An access token to an existing account for the bot. The display name will get overwritten.
+  accessToken: "Your_token_here"
+
+# The configuration for the wireless network scanning.
+wifi:
+  # The command to run to scan for new networks
+  command: "iwlist wlan0 scan"
+
+  # The regex to use when looking for network names
+  ssidSearchRegex: "(?m).*ESSID:(?p<ssid>.*)"
+
+  # The room ID to announce network changes to. Must be known to your homeserver. The bot
+  # will try to join the room by ID upon startup.
+  matrixAnnounceRoomId: "!somewhere:t2bot.io"
+
+# Configuration for the bot's logging
+logging:
+  # The directory to store log files to. They will be rotated automatically every day.
+  directory: "logs"
