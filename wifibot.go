@@ -3,9 +3,9 @@ package main
 import (
 	"flag"
 	"github.com/sirupsen/logrus"
-	"./config"
-	"./logging"
-	"./matrix"
+	"turt2live/matrix-wifi-bot/config"
+	"github.com/turt2live/matrix-wifi-bot/logging"
+	"matrix-wifi-bot/matrix"
 	"strings"
 	"os/exec"
 	"regexp"
