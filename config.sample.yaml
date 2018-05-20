@@ -12,7 +12,7 @@ wifi:
   command: "iwlist wlan0 scan"
 
   # The regex to use when looking for network names
-  ssidSearchRegex: "(?m).*ESSID:(?p<ssid>.*)"
+  ssidSearchRegex: "(?m).*ESSID:(?P<ssid>.*)"
 
   # The room ID to announce network changes to. Must be known to your homeserver. The bot
   # will try to join the room by ID upon startup.

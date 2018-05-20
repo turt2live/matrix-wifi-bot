@@ -99,7 +99,7 @@ func NewDefaultConfig() *BotConfig {
 		},
 		Wifi: &WifiConfig{
 			Command:        "iwlist wlan0 scan",
-			SsidSearch:     "(?m).*ESSID:(?p<ssid>.*)",
+			SsidSearch:     "(?m).*ESSID:(?P<ssid>.*)",
 			AnnounceRoomId: "!someroom:t2bot.io",
 		},
 		Logging: &LoggingConfig{
