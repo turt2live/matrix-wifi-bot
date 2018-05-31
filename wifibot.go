@@ -77,7 +77,7 @@ func main() {
 
 			knownNetworks = nets
 		}
-		time.Sleep(60 * time.Second)
+		time.Sleep(15 * 60 * time.Second)
 	}
 }
 
